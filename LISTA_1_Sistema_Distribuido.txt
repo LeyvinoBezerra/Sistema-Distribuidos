@@ -1,0 +1,179 @@
+UNIVERSIDADE FEDERAL RURAL DO SEMI-ÁRIDO - UFERSA
+Departamento de Computação - DC
+Graduação em Ciência da Computação
+Disciplina: Sistemas Distribuídos
+Prof.: Paulo Henrique Lopes Silva
+
+📌 Lista 1 – Sistemas Distribuídos
+
+Lista 1
+1. Descreva quais avanços tecnológicos impulsionam a criação de sistemas distribuídos.
+2. Sobre a concepção de sistemas distribuídos, o que significa visão integrativa e visão expansiva?
+3. O que são sistemas distribuídos e quais suas principais motivações?
+4. O conceito de sistemas distribuídos resulta em consequências importantes em sua criação.
+Descreva-as.
+5. Cite, descreva e exemplifique pelo menos três setores de atividade onde os sistemas
+distribuídos são aplicados.
+6. Comente sobre heterogeneidade em sistemas distribuídos.
+7. O que caracteriza um middleware?
+8. O que é e para que serve a migração de código?
+9. Quais as características de máquinas virtuais de processo, máquinas virtuais de computadores e
+contêineres?
+10. Sobre as metas de sistemas distribuídos, comente sobre:
+● Sistemas abertos.
+● Segurança.
+● Escalabilidade.
+● Dependabilidade e tratamento de falhas.
+● Concorrência.
+● Transparência.
+● Qualidade de serviço.
+11. Quais são as principais tendências na área de sistemas distribuídos?
+12. Conceitue, caracterize, exemplifique e ao mesmo tempo diferencie computação pervasiva,
+computação móvel, computação ubíqua e internet das coisas.
+13. Caracterize os sistemas distribuídos multimídia.
+14. Sobre as infraestruturas de sistemas distribuídos, caracterize e exemplifique:
+● Cluster de computadores.
+● Grade computacional.
+● Computação em nuvem, computação em névoa e computação de borda.
+15. Sobre os sistemas de informação, comente sobre suas características principais, modelo de
+desenvolvimento em três camadas e integração de aplicações
+
+Lista 1 - Respostas
+1. Avanços tecnológicos que impulsionam sistemas distribuídos
+Redes de alta velocidade (fibra óptica, 5G, Wi-Fi 6).
+
+Processadores multicore e hardware mais barato.
+
+Virtualização e contêineres (VMware, Docker).
+
+Computação em nuvem (AWS, Azure, Google Cloud).
+
+Dispositivos móveis e IoT conectados constantemente.
+
+2. Visão integrativa e visão expansiva
+Visão integrativa: sistemas distribuídos vistos como um único sistema coeso, transparente para o usuário.
+
+Visão expansiva: destaca a diversidade e a expansão de recursos, permitindo que diferentes sistemas e tecnologias coexistam e se integrem.
+
+3. O que são sistemas distribuídos e motivações
+Definição: conjunto de computadores independentes que se apresentam como um único sistema.
+
+Motivações:
+
+Compartilhamento de recursos.
+
+Escalabilidade.
+
+Tolerância a falhas.
+
+Melhor desempenho e disponibilidade.
+
+4. Consequências importantes
+Concorrência: múltiplos processos simultâneos.
+
+Falhas parciais: um nó pode falhar sem derrubar todo o sistema.
+
+Escalabilidade: necessidade de crescer sem perda de desempenho.
+
+Complexidade de sincronização: manter consistência entre nós.
+
+5. Setores de aplicação
+Bancos: sistemas de transações distribuídas.
+
+E-commerce: Amazon, Mercado Livre.
+
+Saúde: prontuários eletrônicos integrados.
+
+Educação: plataformas de ensino online.
+
+Entretenimento: Netflix, Spotify.
+
+6. Heterogeneidade
+Refere-se à diversidade de hardware, sistemas operacionais, linguagens e protocolos.
+
+Exemplo: integração de servidores Linux, Windows e dispositivos móveis em uma mesma rede.
+
+7. Middleware
+Definição: camada de software que facilita comunicação entre aplicações distribuídas.
+
+Exemplo: CORBA, gRPC, RabbitMQ.
+
+8. Migração de código
+O que é: transferência de código em execução entre máquinas.
+
+Para que serve: balanceamento de carga, mobilidade de processos, atualização dinâmica.
+
+9. Máquinas virtuais e contêineres
+Máquina virtual de processo: abstrai uma linguagem (ex.: JVM).
+
+Máquina virtual de computador: simula hardware completo (ex.: VirtualBox).
+
+Contêineres: isolam aplicações de forma leve, compartilhando kernel (ex.: Docker).
+
+10. Metas de sistemas distribuídos
+Sistemas abertos: interoperabilidade entre diferentes plataformas.
+
+Segurança: autenticação, criptografia, controle de acesso.
+
+Escalabilidade: crescer sem perda de desempenho.
+
+Dependabilidade: tolerância a falhas e recuperação.
+
+Concorrência: múltiplos usuários/processos simultâneos.
+
+Transparência: ocultar complexidade (localização, replicação, falhas).
+
+Qualidade de serviço: desempenho, latência, disponibilidade.
+
+11. Tendências atuais
+Computação em nuvem e serverless.
+
+Edge computing e fog computing.
+
+Blockchain e sistemas descentralizados.
+
+Inteligência artificial distribuída.
+
+IoT em larga escala.
+
+12. Diferenças conceituais
+Computação pervasiva: tecnologia presente em todos os ambientes.
+
+Computação móvel: uso de dispositivos portáteis (smartphones, tablets).
+
+Computação ubíqua: acesso invisível e contínuo à tecnologia.
+
+Internet das coisas (IoT): objetos físicos conectados à rede.
+
+13. Sistemas distribuídos multimídia
+Integram áudio, vídeo e dados em tempo real.
+
+Exemplo: videoconferências (Zoom, Teams), streaming (Netflix).
+
+14. Infraestruturas
+Cluster: conjunto de computadores interligados atuando como um único sistema (ex.: HPC).
+
+Grade computacional (Grid): compartilhamento de recursos geograficamente dispersos.
+
+Nuvem: serviços sob demanda via internet.
+
+Névoa (Fog): processamento próximo ao usuário, entre nuvem e borda.
+
+Borda (Edge): processamento diretamente nos dispositivos finais.
+
+15. Sistemas de informação
+Características: integração de dados, suporte à decisão, automação de processos.
+
+Modelo em três camadas:
+
+Camada de apresentação (interface).
+
+Camada de lógica (processamento).
+
+Camada de dados (banco de dados).
+
+Integração de aplicações: uso de APIs, ESB (Enterprise Service Bus), microserviços.
+
+💡 Essa lista cobre os principais conceitos da disciplina e está organizada para facilitar tanto a leitura quanto a memorização.
+
+Quer que eu monte também resumos em flashcards para cada questão, para você estudar de forma rápida e prática?
