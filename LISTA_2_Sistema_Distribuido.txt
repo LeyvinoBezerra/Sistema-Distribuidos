@@ -1,0 +1,159 @@
+UNIVERSIDADE FEDERAL RURAL DO SEMI-ÁRIDO - UFERSA
+Departamento de Computação - DC
+Graduação em Ciência da Computação
+Disciplina: Sistemas Distribuídos
+Prof.: Paulo Henrique Lopes Silva
+
+📌 Lista 2 – Sistemas Distribuídos
+
+1. Arquitetura de sistemas distribuídos
+Conceito: organização estrutural que define como os componentes de um sistema distribuído interagem.
+
+Objetivos: escalabilidade, tolerância a falhas, transparência, desempenho.
+
+Aspectos de projeto: comunicação entre processos, sincronização, segurança, gerenciamento de recursos.
+
+Implicações: maior complexidade de desenvolvimento, necessidade de padronização, desafios de interoperabilidade.
+
+2. Arquitetura de software, estilos e padrões
+Arquitetura de software: estrutura que organiza componentes de um sistema e suas interações.
+
+Estilos arquitetônicos: modelos gerais de organização (cliente/servidor, P2P, camadas).
+
+Padrões arquiteturais: soluções recorrentes para problemas específicos (MVC, microserviços).
+
+Implicações: facilitam manutenção, escalabilidade e reutilização de código.
+
+3. Estilos arquitetônicos
+Camadas (Layered): organização hierárquica (apresentação, lógica, dados).
+
+Cliente/Servidor: divisão entre quem solicita e quem fornece serviços.
+
+P2P: todos os nós podem ser clientes e servidores.
+
+Orientado a eventos: comunicação assíncrona via notificações.
+
+Microserviços: serviços independentes que se comunicam por APIs.
+
+4. Arquitetura cliente/servidor em três camadas
+Camadas:
+
+Apresentação: interface do usuário.
+
+Lógica de aplicação: regras de negócio.
+
+Dados: armazenamento.
+
+Variações: duas camadas, n camadas, thin client, fat client.
+
+Aplicações: sistemas acadêmicos, bancários, ERP.
+
+Vantagens: modularidade, manutenção facilitada.
+
+Limitações: sobrecarga no servidor central.
+
+5. Arquitetura P2P
+Conceito: todos os participantes podem atuar como clientes e servidores.
+
+Objetivos: descentralização, compartilhamento de recursos.
+
+Características: distribuição de carga, ausência de servidor central.
+
+Vantagens: escalabilidade, tolerância a falhas.
+
+Limitações: gerenciamento complexo, segurança mais difícil.
+
+Implicações: ideal para compartilhamento de arquivos e redes descentralizadas.
+
+6. P2P estruturada vs não estruturada
+Não estruturada:
+
+Caracterização: conexões aleatórias entre nós.
+
+Funcionamento: busca por flooding ou aleatória.
+
+Tipos: Gnutella, KaZaA.
+
+Exemplos: redes de compartilhamento de música.
+
+Estruturada:
+
+Caracterização: uso de tabelas de hash distribuídas (DHT).
+
+Funcionamento: localização eficiente de recursos.
+
+Tipos: Chord, Kademlia.
+
+Exemplos: BitTorrent, IPFS.
+
+7. Comparação cliente/servidor vs P2P
+
+| Critério            | Cliente/Servidor               | P2P |
+| ---                 | ---                            | --- |
+| Organização         | Hierárquica                    | Distribuída |
+| Responsabilidades   | Centralizadas no servidor      | Distribuídas entre nós |
+| Comunicação         | Direta cliente-servidor        | Entre pares |
+| Escalabilidade      | Limitada pelo servidor         | Alta |
+| Tolerância a falhas | Baixa (servidor central)       | Alta |
+| Gerenciamento       | Mais simples                   | Mais complexo |
+| Exemplos            | Sistemas bancários, acadêmicos | BitTorrent, blockchain |
+
+8. Sistema de distribuição de arquivos
+Arquitetura adequada: P2P, pois evita dependência de servidor central e distribui recursos.
+
+Mais adequada: P2P estruturada, pois permite localizar arquivos de forma eficiente em grandes redes.
+
+9. Sistema acadêmico
+Arquitetura adequada: Cliente/Servidor, pois exige centralização e controle.
+
+Organização em três camadas:
+
+Apresentação: interface web/app para estudantes.
+
+Lógica: regras de matrícula, notas.
+
+Dados: banco de dados centralizado.
+
+Função de cada camada: separar responsabilidades, facilitar manutenção e segurança.
+
+10. Problema de sobrecarga em cliente/servidor
+Características contribuintes: centralização, dependência de um único servidor.
+
+Estratégias: balanceamento de carga, replicação de servidores, uso de cache, escalabilidade horizontal.
+
+P2P: distribui a carga entre os participantes, reduzindo sobrecarga central.
+
+11. Verdadeiro ou falso
+Falso – cliente/servidor tem funções distintas.
+
+Verdadeiro – P2P distribui responsabilidades.
+
+Falso – P2P ainda enfrenta problemas de escalabilidade e gerenciamento.
+
+Verdadeiro – três camadas organizam apresentação, lógica e dados.
+
+Falso – P2P não estruturada não tem estrutura rígida.
+
+Verdadeiro – servidor central facilita gerenciamento, mas cria ponto de falha.
+
+12. Situações e arquiteturas
+Sistema bancário → Cliente/Servidor (centralização e segurança).
+
+Compartilhamento de arquivos → P2P (distribuição de carga).
+
+Sistema web com separação → Cliente/Servidor em três camadas.
+
+Participantes com recursos próprios → P2P (flexibilidade e descentralização).
+
+13. Sistema de comércio eletrônico
+Arquitetura proposta: Cliente/Servidor distribuído, com servidores de aplicação e banco de dados replicados.
+
+Estilos arquitetônicos: Microserviços + Orientado a eventos.
+
+Justificativa:
+
+Arquitetura define organização geral (cliente/servidor).
+
+Estilo define organização interna (microserviços, eventos).
+
+Juntas, permitem modularidade, escalabilidade e comunicação assíncrona.
